@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<script>
+    $('div').css({width:'100px',height:'100px',display:'inline-block'}).wrapAll('div').parent().css({width:'400px',height:'400px',display:'inline-block'}).end().filter(':lt(4):odd').css('background','black').end().slice('4','8').filter(':even').css('background','black').end().end().slice('8','13').filter(':odd').css('background','black').end().end().slice('12','16').filter(':even').css('background','black');
+</script>
+</body>
+</html>
